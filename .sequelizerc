@@ -1,0 +1,11 @@
+const path = require("path");
+
+
+/* exporta un objeto, dicho objeto tiene cuatro propiedades. Esta configuracion crea una estructura de carpetas y archivos. Estas carpetas las creo con sequelize init  */
+module.exports = {
+  config: path.resolve("./src/database/config", "config.js"),
+  "models-path": path.resolve("./src/database/models"),
+  "seeders-path": path.resolve("./src/database/seeders"),
+  "migrations-path": path.resolve("./src/database/migrations"),
+};
+
